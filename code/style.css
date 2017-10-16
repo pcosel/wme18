@@ -28,7 +28,15 @@ a:hover {
     padding: 0 2% 0 2%;
     border: 1px solid #cbcbcb;
     border-bottom: none;
+    background-color: inherit;
+    transition: background-color 1200ms;
 
+
+}
+
+#navigation li:hover {
+    background-color:#cbcbcb;
+    transition: background-color 500ms;
 }
 
 #logo_li {
