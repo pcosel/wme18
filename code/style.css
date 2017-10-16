@@ -29,22 +29,30 @@ a:hover {
     border: 1px solid #cbcbcb;
     border-bottom: none;
     background-color: inherit;
-    transition: background-color 1200ms;
+    color: #848484;
+    transition: color 500ms, background-color 500ms;
+
 
 
 }
 
 #navigation li:hover {
     background-color:#cbcbcb;
-    transition: background-color 500ms;
+    color:black;
+    transition: color 700ms,background-color 700ms;
 }
 
 #logo_li {
     width:170px;
     border-left: none;
     height:80px;
+    background-image: linear-gradient(#cbcbcb, #e2e2e2);
 }
 
+#logo_li:hover {
+    color: #848484;
+    background-image: linear-gradient(#cbcbcb, #e2e2e2);
+}
 #logo {
     overflow:hidden;
 }
