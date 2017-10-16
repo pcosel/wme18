@@ -1,17 +1,46 @@
+body {
+    margin: 0px;
+}
+
 a {
     color: #8ed250;
     text-decoration: underline;
 }
+
 a:hover {
     color: #50893a;
     text-decoration: none;
 }
+
 #navigation {
-    list-style-type: none;
+    line-height: 80px;
     margin: 0;
-    padding: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    list-style-type: none;
     overflow: hidden;
+    border-bottom:  1px solid #cbcbcb;
+    background-image: linear-gradient(#cbcbcb, #e2e2e2);
 }
+
 #navigation li {
     float: left;
+    padding: 0 2% 0 2%;
+    border: 1px solid #cbcbcb;
+    border-bottom: none;
+
+}
+
+#logo_li {
+    width:170px;
+    border-left: none;
+    height:80px;
+}
+
+#logo {
+    overflow:hidden;
+}
+
+#logo:hover {
+    margin-top: -80px;
 }
