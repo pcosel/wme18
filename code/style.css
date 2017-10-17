@@ -5,6 +5,22 @@ body {
     line-height: 145%;
 }
 
+table {
+    border-spacing: 0px;
+    width: 100%;
+    text-align: left;
+}
+
+th {
+    padding: 10px;
+    border-bottom: 2px solid #cbcbcb;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #cbcbcb;
+}
+
 a {
     color: #8ed250;
     text-decoration: underline;
