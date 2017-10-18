@@ -12,6 +12,13 @@ body {
     line-height: 145%;
 }
 
+#content {
+    width:1170px;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+}
+
 table {
     border-spacing: 0px;
     width: 100%;
@@ -90,16 +97,24 @@ nav {
 }
 
 article {
-    margin: 50px 125px;
+    margin-top:5%;
+    box-shadow: 0 2px 3px 0px #e2e2e2;
+    border: 1px solid lightgray;
+    border-top: 1px solid #90d05f;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-h1 {
+header {
     font-size: 40px;
     font-weight: lighter;
 }
 
 p {
+    margin: 0px;
+    padding: 10px;
     column-count: 1;
+
 }
 
 @media screen and (min-width: 720px) {
