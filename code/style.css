@@ -1,3 +1,10 @@
+
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+
+
 body {
     margin: 0px;
     font-family: Roboto;
@@ -30,9 +37,11 @@ a:hover {
     color: #71955d;
     text-decoration: none;
 }
+
 nav {
- height: 80px;
+    height: 80px;
     overflow: hidden;
+    /*position: fixed;*/
 }
 
 #navigation {
@@ -50,7 +59,6 @@ nav {
     float: left;
     padding: 0 2% 0 2%;
     border-right: 1px solid #cbcbcb;
-    border-bottom: none;
     background-color: inherit;
     color: #848484;
     transition: color 500ms, background-color 500ms;
@@ -65,14 +73,12 @@ nav {
 
 #logo_li {
     width: 170px;
-    border-left: none;
     height: 80px;
     background-image: linear-gradient(#cbcbcb, #e2e2e2);
 }
 
 #logo_li:hover {
     color: #848484;
-    background-image: linear-gradient(#cbcbcb, #e2e2e2);
 }
 
 #logo {
@@ -81,11 +87,6 @@ nav {
 
 #logo:hover {
     margin-top: -80px;
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url(https://fonts.googleapis.com/css?family=Roboto);
 }
 
 article {
@@ -98,9 +99,23 @@ h1 {
 }
 
 p {
-    column-count: 3;
+    column-count: 1;
+}
+
+@media screen and (min-width: 720px) {
+    p {
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    p {
+        column-count: 3;
+    }
 }
 
 footer {
     text-align: right;
 }
+
+
