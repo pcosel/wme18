@@ -1,22 +1,29 @@
 
+
+
+/**/
 @font-face {
     font-family: Roboto;
     src: url(https://fonts.googleapis.com/css?family=Roboto);
 }
 
-
 body {
-    margin: 0px;
+    margin: 0;
     font-family: Roboto;
     font-size: 14px;
     line-height: 145%;
 }
-
 #content {
-    width:1170px;
+    width: 80%;
     display: block;
     margin: auto;
     margin-top: 80px;
+}
+
+@media screen and (min-width: 1462px) {
+    #content {
+        width: 1170px;
+    }
 }
 
 table {
@@ -26,7 +33,7 @@ table {
 }
 
 th {
-    padding: 10px;
+    padding: 1%;
     border-bottom: 2px solid #cbcbcb;
 }
 
@@ -97,7 +104,8 @@ nav {
 }
 
 article {
-    margin-top:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     box-shadow: 0 2px 3px 0px #e2e2e2;
     border: 1px solid lightgray;
     border-top: 1px solid #90d05f;
@@ -111,19 +119,48 @@ header {
 }
 
 p {
-    margin: 0px;
+    margin: 0;
     padding: 10px;
     column-count: 1;
 
 }
 
-@media screen and (min-width: 720px) {
+.birth_rate, .cellphones, .children, .electric_usage, .internet_usage {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .birth_rate {
+        display: table-cell;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .cellphones {
+        display: table-cell;
+    }
     p {
         column-count: 2;
     }
 }
 
+@media screen and (min-width: 800px) {
+    .children {
+        display: table-cell;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .electric_usage {
+        display: table-cell;
+    }
+}
+
 @media screen and (min-width: 1000px) {
+    .internet_usage {
+        display: table-cell;
+    }
+
     p {
         column-count: 3;
     }
