@@ -1,4 +1,8 @@
-/*
+/**/
+
+.fa-angle-down, .fa-angle-up{
+    color: #90d05f  ;
+}
 @font-face {
     font-family: Roboto;
     src: url(https://fonts.googleapis.com/css?family=Roboto);
@@ -21,6 +25,7 @@ body {
 @media screen and (min-width: 1462px) {
     #content {
         width: 1170px;
+
     }
 }
 
@@ -28,18 +33,15 @@ table {
     border-spacing: 0px;
     width: 100%;
     text-align: left;
-
 }
 
 th {
-    font-weight: bolder;
-    font-size: 18px;
-    padding: 10px 25px 10px 25px;
+    padding: 25px;
     border-bottom: 2px solid #cbcbcb;
 }
 
 td {
-    padding: 10px 25px 10px 25px;
+    padding: 25px;
     border-bottom: 1px solid #cbcbcb;
 }
 
@@ -168,141 +170,5 @@ p {
 footer {
     text-align: right;
 }
-*/
 
-@font-face {
-    font-family : Roboto;
-    src : url(https://fonts.googleapis.com/css?family=Roboto);
-}
-body {
-    margin : 0;
-    font-family : Roboto;
-    font-size : 14px;
-    line-height : 145%;
-}
-#content {
-    width : 90%;
-    display : block;
-    margin : auto;
-    margin-top : 80px;
-}
-@media screen and (min-width:1462px) {
-    #content {
-        width : 1170px;
-    }
-}
-table {
-    border-spacing : 0;
-    width : 100%;
-    text-align : left;
-}
-th {
-    font-weight : bolder;
-    font-size : 18px;
-    padding : 10px 25px 10px 25px;
-    border-bottom : 2px solid #cbcbcb;
-}
-td {
-    padding : 10px 25px 10px 25px;
-    border-bottom : 1px solid #cbcbcb;
-}
-a {
-    color : #8ed250;
-    text-decoration : underline;
-}
-a:hover {
-    color : #71955d;
-    text-decoration : none;
-}
-nav {
-    width : 100%;
-    height : 80px;
-    overflow : hidden;
-    top : 0;
-    box-shadow : 0 0 10px 0 black;
-    position: sticky;
-}
-#navigation {
-    line-height : 80px;
-    margin : 0;
-    padding-left : 10%;
-    padding-right : 10%;
-    list-style-type : none;
-    overflow : hidden;
-    border-bottom : 1px solid #cbcbcb;
-    background-image : linear-gradient(#cbcbcb, #e2e2e2);
-}
-#navigation li {
-    float : left;
-    padding : 0 2% 0 2%;
-    border-right : 1px solid #cbcbcb;
-    background-color : inherit;
-    color : #848484;
-    transition : color 500ms, background-color 500ms;
-}
-#navigation li:hover {
-    background-color : #cbcbcb;
-    color : black;
-    transition : color 700ms, background-color 700ms;
-}
-#logo_li {
-    width : 170px;
-    height : 80px;
-    background-image : linear-gradient(#cbcbcb, #e2e2e2);
-}
-#logo_li:hover {
-    color : #848484;
-}
-#logo {
-    overflow : hidden;
-}
-#logo:hover {
-    margin-top : -80px;
-}
-article {
-    margin-top : 5%;
-    margin-bottom : 5%;
-    box-shadow : 0 2px 3px 0 #e2e2e2;
-    border : lightgray solid 1px;
-    border-top : 1px solid #90d05f;
-    border-bottom-left-radius : 5px;
-    border-bottom-right-radius : 5px;
-}
-header {
-    font-size : 40px;
-    font-weight : lighter;
-}
-p {
-    margin : 0;
-    padding : 10px;
-    column-count : 1;
-}
-.cellphones, .electric_usage, .internet_usage {
-    display : none;
-}
-@media screen and (min-width:320px) {
-    .cellphones {
-        display : table-cell;
-    }
-}
-@media screen and (min-width:768px) {
-    .electric_usage {
-        display : table-cell;
-    }
-    p {
-        column-count : 2;
-    }
-}
-@media screen and (min-width:1000px) {
-    p {
-        column-count : 3;
-    }
-}
-@media screen and (min-width:1200px) {
-    .internet_usage {
-        display : table-cell;
-    }
-}
-footer {
-    text-align : right;
-}
+

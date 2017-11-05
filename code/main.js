@@ -410,7 +410,7 @@ var output =
     ' <thead>' +
     ' <tr>' +
     ' <th class="id">ID</th>' +
-    ' <th class="name">Country</th>' +
+    ' <th class="name">Country  <i class="fa fa-angle-up" aria-hidden="true"></i>  <i class="fa fa-angle-down" aria-hidden="true"></i></th>' +
     ' <th class="birth_rate">birth rate / 1000</th>' +
     ' <th class="cellphones">cellphones / 100</th>' +
     ' <th class="children">children / women</th>' +
