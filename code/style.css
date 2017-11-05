@@ -1,4 +1,8 @@
 /**/
+
+.fa-angle-down, .fa-angle-up{
+    color: #90d05f  ;
+}
 @font-face {
     font-family: Roboto;
     src: url(https://fonts.googleapis.com/css?family=Roboto);
