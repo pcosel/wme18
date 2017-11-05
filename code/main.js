@@ -405,37 +405,91 @@ var json = "[\n" +
 
 var items = JSON.parse(json);
 
-var output =
-    ' <table>' +
-    ' <thead>' +
-    ' <tr>' +
-    ' <th class="id">ID</th>' +
-    ' <th class="name">Country  <i class="fa fa-angle-up" aria-hidden="true"></i>  <i class="fa fa-angle-down" aria-hidden="true"></i></th>' +
-    ' <th class="birth_rate">birth rate / 1000</th>' +
-    ' <th class="cellphones">cellphones / 100</th>' +
-    ' <th class="children">children / women</th>' +
-    ' <th class="electric_usage">electric usage</th>' +
-    ' <th class="internet_usage">internet usage</th>' +
-    ' </tr>' +
-    ' </thead>' +
-    ' <tbody>';
+sortAscending();
 
-for (var key in items) {
-    var item = items[key];
-    output +=
+document.getElementById("sort-asc").onclick = function () {sortAscending()};
+document.getElementById("sort-desc").onclick = function () {sortDescending()};
+
+function sortAscending() {
+    var output =
+        ' <table>' +
+        ' <thead>' +
         ' <tr>' +
-        ' <td class="id">' + key + '</td>' +
-        ' <td class="name">' + item["name"] + '</td>' +
-        ' <td class="birth_rate">' + item["birth rate per 1000"] + '</td>' +
-        ' <td class="cellphones">' + item["cell phones per 100"] + '</td>' +
-        ' <td class="children">' + item["children per woman"] + '</td>' +
-        ' <td class="electric_usage">' + item["electricity consumption per capita"] + '</td>' +
-        ' <td class="internet_usage">' + item["internet user per 100"] + '</td>' +
-        ' </tr>';
+        ' <th class="id">ID</th>' +
+        ' <th class="name">Country  <i id="sort-asc" class="fa fa-angle-up" aria-hidden="true"></i>  <i id="sort-desc" class="fa fa-angle-down" aria-hidden="true"></i></th>' +
+        ' <th class="birth_rate">birth rate / 1000</th>' +
+        ' <th class="cellphones">cellphones / 100</th>' +
+        ' <th class="children">children / women</th>' +
+        ' <th class="electric_usage">electric usage</th>' +
+        ' <th class="internet_usage">internet usage</th>' +
+        ' </tr>' +
+        ' </thead>' +
+        ' <tbody>';
+
+    for (var key in items) {
+        var item = items[key];
+        output +=
+            ' <tr>' +
+            ' <td class="id">' + key + '</td>' +
+            ' <td class="name">' + item["name"] + '</td>' +
+            ' <td class="birth_rate">' + item["birth rate per 1000"] + '</td>' +
+            ' <td class="cellphones">' + item["cell phones per 100"] + '</td>' +
+            ' <td class="children">' + item["children per woman"] + '</td>' +
+            ' <td class="electric_usage">' + item["electricity consumption per capita"] + '</td>' +
+            ' <td class="internet_usage">' + item["internet user per 100"] + '</td>' +
+            ' </tr>';
+    }
+
+    output +=
+        '</tbody>' +
+        '</table>';
+
+    document.getElementById("table").innerHTML = output;
+
+    document.getElementById("sort-asc").onclick = function () {sortAscending()};
+    document.getElementById("sort-desc").onclick = function () {sortDescending()};
 }
 
-output +=
-    '</tbody>' +
-    '</table>';
+function sortDescending() {
 
-document.getElementById("table").innerHTML = output;
+    var output = "";
+
+    for (var key in items) {
+        var item = items[key];
+        output =
+            ' <tr>' +
+            ' <td class="id">' + key + '</td>' +
+            ' <td class="name">' + item["name"] + '</td>' +
+            ' <td class="birth_rate">' + item["birth rate per 1000"] + '</td>' +
+            ' <td class="cellphones">' + item["cell phones per 100"] + '</td>' +
+            ' <td class="children">' + item["children per woman"] + '</td>' +
+            ' <td class="electric_usage">' + item["electricity consumption per capita"] + '</td>' +
+            ' <td class="internet_usage">' + item["internet user per 100"] + '</td>' +
+            ' </tr>' + output;
+    }
+
+    var output =
+        ' <table>' +
+        ' <thead>' +
+        ' <tr>' +
+        ' <th class="id">ID</th>' +
+        ' <th class="name">Country  <i id="sort-asc" class="fa fa-angle-up" aria-hidden="true"></i>  <i id="sort-desc" class="fa fa-angle-down" aria-hidden="true"></i></th>' +
+        ' <th class="birth_rate">birth rate / 1000</th>' +
+        ' <th class="cellphones">cellphones / 100</th>' +
+        ' <th class="children">children / women</th>' +
+        ' <th class="electric_usage">electric usage</th>' +
+        ' <th class="internet_usage">internet usage</th>' +
+        ' </tr>' +
+        ' </thead>' +
+        ' <tbody>' + output;
+
+
+    output +=
+        '</tbody>' +
+        '</table>';
+
+    document.getElementById("table").innerHTML = output;
+
+    document.getElementById("sort-asc").onclick = function () {sortAscending()};
+    document.getElementById("sort-desc").onclick = function () {sortDescending()};
+}
