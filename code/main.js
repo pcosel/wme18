@@ -406,31 +406,36 @@ var json = "[\n" +
 var items = JSON.parse(json);
 
 var output =
-    ' <table>\n' +
-    ' <tr>\n' +
-    ' <th class="id">ID</th>\n' +
-    ' <th class="name">Country</th>\n' +
-    ' <th class="birth_rate">birth rate / 1000</th>\n' +
-    ' <th class="cellphones">cellphones / 100</th>\n' +
-    ' <th class="children">children / women</th>\n' +
-    ' <th class="electric_usage">electric usage</th>\n' +
-    ' <th class="internet_usage">internet usage</th>\n' +
-    ' </tr>';
+    ' <table>' +
+    ' <thead>' +
+    ' <tr>' +
+    ' <th class="id">ID</th>' +
+    ' <th class="name">Country</th>' +
+    ' <th class="birth_rate">birth rate / 1000</th>' +
+    ' <th class="cellphones">cellphones / 100</th>' +
+    ' <th class="children">children / women</th>' +
+    ' <th class="electric_usage">electric usage</th>' +
+    ' <th class="internet_usage">internet usage</th>' +
+    ' </tr>' +
+    ' </thead>' +
+    ' <tbody>';
 
 for (var key in items) {
     var item = items[key];
     output +=
-        ' <tr>\n' +
-        ' <td class="id">' + key + '</td>\n' +
-        ' <td class="name">' + item["name"] + '</td>\n' +
-        ' <td class="birth_rate">' + item["birth rate per 1000"] + '</td>\n' +
-        ' <td class="cellphones">' + item["cell phones per 100"] + '</td>\n' +
-        ' <td class="children">' + item["children per woman"] + '</td>\n' +
-        ' <td class="electric_usage">' + item["electricity consumption per capita"] + '</td>\n' +
-        ' <td class="internet_usage">' + item["internet user per 100"] + '</td>\n' +
+        ' <tr>' +
+        ' <td class="id">' + key + '</td>' +
+        ' <td class="name">' + item["name"] + '</td>' +
+        ' <td class="birth_rate">' + item["birth rate per 1000"] + '</td>' +
+        ' <td class="cellphones">' + item["cell phones per 100"] + '</td>' +
+        ' <td class="children">' + item["children per woman"] + '</td>' +
+        ' <td class="electric_usage">' + item["electricity consumption per capita"] + '</td>' +
+        ' <td class="internet_usage">' + item["internet user per 100"] + '</td>' +
         ' </tr>';
 }
 
-output += '</table>';
+output +=
+    '</tbody>' +
+    '</table>';
 
-document.write(output);
+document.getElementById("table").innerHTML = output;
