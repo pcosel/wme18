@@ -405,25 +405,32 @@ var json = "[\n" +
 
 var items = JSON.parse(json);
 
-console.log(items);
-
-var output = '   <table>\n' +
-    '        <tr>\n' +
-    '            <th>ID</th>\n' +
-    '            <th>Country</th>\n' +
-    '            <th class="birth_rate">birth rate / 1000</th>\n' +
-    '            <th class="cellphones">cellphones / 100</th>\n' +
-    '            <th class="children">children / women</th>\n' +
-    '            <th class="electric_usage">electric usage</th>\n' +
-    '            <th class="internet_usage">internet usage</th>\n' +
-    '        </tr>';
-
-output += '<tr>';
+var output =
+    ' <table>\n' +
+    ' <tr>\n' +
+    ' <th class="id">ID</th>\n' +
+    ' <th class="name">Country</th>\n' +
+    ' <th class="birth_rate">birth rate / 1000</th>\n' +
+    ' <th class="cellphones">cellphones / 100</th>\n' +
+    ' <th class="children">children / women</th>\n' +
+    ' <th class="electric_usage">electric usage</th>\n' +
+    ' <th class="internet_usage">internet usage</th>\n' +
+    ' </tr>';
 
 for (var key in items) {
-    output += '<td>' + items[key].b + '</td>';
+    var item = items[key];
+    output +=
+        ' <tr>\n' +
+        ' <td class="id">' + key + '</td>\n' +
+        ' <td class="name">' + item["name"] + '</td>\n' +
+        ' <td class="birth_rate">' + item["birth rate per 1000"] + '</td>\n' +
+        ' <td class="cellphones">' + item["cell phones per 100"] + '</td>\n' +
+        ' <td class="children">' + item["children per woman"] + '</td>\n' +
+        ' <td class="electric_usage">' + item["electricity consumption per capita"] + '</td>\n' +
+        ' <td class="internet_usage">' + item["internet user per 100"] + '</td>\n' +
+        ' </tr>';
 }
 
-output += '</tr>';
+output += '</table>';
 
 document.write(output);
