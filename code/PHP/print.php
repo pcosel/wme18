@@ -1,1 +1,3 @@
-require("world_data_parser.php");
+<?php
+    require("world_data_parser.php");
+?>
