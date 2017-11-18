@@ -9,8 +9,6 @@
     <list default="true" id="787a5972-ed5a-45fb-85d5-e0b314c27098" name="Default" comment="Merge branch 'master' of https://github.com/pcosel/wme18&#10;&#10;# Conflicts:&#10;#&#9;code/index.html">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/PHP/parse.php" afterPath="$PROJECT_DIR$/code/PHP/parse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/PHP/print.php" afterPath="$PROJECT_DIR$/code/PHP/print.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/PHP/save.php" afterPath="$PROJECT_DIR$/code/PHP/save.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/PHP/world_data_parser.php" afterPath="$PROJECT_DIR$/code/PHP/world_data_parser.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -48,18 +46,40 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11350">
+            <state relative-caret-position="25">
               <caret line="454" column="20" lean-forward="false" selection-start-line="454" selection-start-column="20" selection-end-line="454" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parse.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="world_data_parser.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/PHP/world_data_parser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parse.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/PHP/parse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state relative-caret-position="150">
+              <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+              <folding>
+                <marker date="1511009188827" expanded="true" signature="121:147" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="world_data_v1.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/world_data_v1.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,16 +100,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
               <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="world_data_parser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/PHP/world_data_parser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -121,10 +131,10 @@
         <option value="$PROJECT_DIR$/code/index.html" />
         <option value="$PROJECT_DIR$/code/style.css" />
         <option value="$PROJECT_DIR$/code/main.js" />
-        <option value="$PROJECT_DIR$/code/PHP/world_data_parser.php" />
         <option value="$PROJECT_DIR$/code/PHP/save.php" />
         <option value="$PROJECT_DIR$/code/PHP/print.php" />
         <option value="$PROJECT_DIR$/code/PHP/parse.php" />
+        <option value="$PROJECT_DIR$/code/PHP/world_data_parser.php" />
       </list>
     </option>
   </component>
@@ -135,7 +145,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-24" />
     <option name="y" value="-14" />
     <option name="width" value="1920" />
@@ -161,14 +171,29 @@
           <expand>
             <path>
               <item name="Aufgabe 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aufgabe 2" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aufgabe 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aufgabe 2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aufgabe 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aufgabe 2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aufgabe 2" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -192,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.world_data_parser.php">
+  <component name="RunManager" selected="JavaScript Debug.parse.php">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -259,10 +284,10 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <configuration name="world_data_parser.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Aufgabe 2/code/PHP/world_data_parser.php" />
+    <configuration name="parse.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" uri="http://localhost:63342/Aufgabe 2/code/PHP/world_data_parser.php" />
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.world_data_parser.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.parse.php" />
       </list>
     </recent_temporary>
   </component>
@@ -292,20 +317,22 @@
       <workItem from="1510519720727" duration="615000" />
       <workItem from="1510660653253" duration="149000" />
       <workItem from="1510743004363" duration="176000" />
-      <workItem from="1510743205620" duration="681000" />
+      <workItem from="1510743205620" duration="1127000" />
+      <workItem from="1510822850761" duration="960000" />
+      <workItem from="1511007262878" duration="4080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14382000" />
+    <option name="totallyTimeSpent" value="19868000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -349,19 +376,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11350">
-          <caret line="454" column="20" lean-forward="false" selection-start-line="454" selection-start-column="20" selection-end-line="454" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/PHP/parse.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
+          <folding>
+            <marker date="1511009188827" expanded="true" signature="121:147" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -417,7 +438,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding />
+          <folding>
+            <marker date="1511009188827" expanded="true" signature="121:147" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -473,7 +496,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-          <folding />
+          <folding>
+            <marker date="1511009188827" expanded="true" signature="121:147" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -529,7 +554,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-          <folding />
+          <folding>
+            <marker date="1511009188827" expanded="true" signature="121:147" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -701,14 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11350">
-          <caret line="454" column="20" lean-forward="false" selection-start-line="454" selection-start-column="20" selection-end-line="454" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1250">
@@ -725,18 +744,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/PHP/world_data_parser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/PHP/save.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="454" column="20" lean-forward="false" selection-start-line="454" selection-start-column="20" selection-end-line="454" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -751,8 +770,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/PHP/parse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        <state relative-caret-position="150">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding>
+            <marker date="1511009188827" expanded="true" signature="121:147" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/world_data_v1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/PHP/world_data_parser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding />
         </state>
       </provider>
