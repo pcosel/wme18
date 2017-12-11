@@ -39,6 +39,10 @@ app.get('/items',function (req, res){
     }
 );
 
+app.get('/items/:id', function(req, res) {
+    const id = req.params.id;
+    res.send(world_data[id - 1]);
+});
 
 // DO NOT CHANGE!
 // bind server to port

@@ -4,11 +4,26 @@ $.ajax({
     url: "http://localhost:3000/items",
     async: true,
     success: function(data) {
-    displayTable(data);
+        displayTable(data);
     }, error: function(jqXHR, text, err) {
 // Handle error if occured
     }
 });
+
+function filterByID() {
+    var id = $('#country_filter_id').value;
+
+    $.ajax({
+        type: "GET",
+        url: "http://localhost:3000/items/" + id,
+        async: true,
+        success: function (data) {
+            displayTable(data);
+        }, error: function (jqXHR, text, err) {
+// Handle error if occured
+        }
+    });
+}
 
 function displayTable (data) {
     var output = "";
