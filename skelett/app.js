@@ -6,10 +6,10 @@ var sys = require('util');
 var path = require('path');
 var bodyParser = require('body-parser');
 var Converter = require("csvtojson").Converter;
+var world_data;
 
 //register body-parser to handle json from res / req
 app.use( bodyParser.json() );
-
 //register public dir to serve static files (html, css, js)
 app.use( express.static( path.join(__dirname, "public") ) );
 
@@ -19,10 +19,20 @@ app.use( express.static( path.join(__dirname, "public") ) );
 /**************************************************************************
 ****************************** csv2json *********************************
 **************************************************************************/
+const csvFilePath='world_data.csv';
+
+Converter
+    .fromFile(csvFilePath)
+    .on("end_parsed", function(jsonArrayObj){
+        world_data = jsonArrayObj;
+        console.log(world_data);
+    });
+
 
 /**************************************************************************
 ********************** handle HTTP METHODS ***********************
 **************************************************************************/
+
 
 
 // DO NOT CHANGE!
