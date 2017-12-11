@@ -6,7 +6,6 @@ $.ajax({
     success: function(data) {
         displayTable(data);
     }, error: function(jqXHR, text, err) {
-// Handle error if occured
     }
 });
 
@@ -16,7 +15,6 @@ function filterByID() {
     var id2 = $('#country_filter_range_max').val();
 
     if(id) {
-        console.log("adsf");
         $.ajax({
             type: "GET",
             url: "http://localhost:3000/items/" + id,
@@ -25,10 +23,10 @@ function filterByID() {
                 var array = [data];
                 displayTable(array);
             }, error: function (jqXHR, text, err) {
-// Handle error if occured
+                alert("No such id " + id + " in database.");
             }
         });
-    } else if(id1 && id2 && id1 <= id2){
+    } else if(id1 && id2){
         console.log(id1 + " " + id2);
         $.ajax({
             type: "GET",
@@ -37,11 +35,19 @@ function filterByID() {
             success: function (data) {
                 displayTable(data);
             }, error: function (jqXHR, text, err) {
-// Handle error if occured
+                alert("Range not possible.");
             }
         });
     } else {
-        alert("Range not possible.");
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:3000/items",
+            async: true,
+            success: function(data) {
+                displayTable(data);
+            }, error: function(jqXHR, text, err) {
+            }
+        });
     }
 }
 
