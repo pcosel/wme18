@@ -1,13 +1,32 @@
-
+getProperties();
 $.ajax({
     type: "GET",
     url: "http://localhost:3000/items",
     async: true,
     success: function(data) {
         displayTable(data);
-    }, error: function(jqXHR, text, err) {
-    }
+    }, error: function(jqXHR, text, err) {}
 });
+
+ function getProperties() {
+     var jsonData =
+         $.ajax({
+             type: "GET",
+             url: "http://localhost:3000/properties",
+             async: true,
+             success: function (data) {
+
+                 for(var i in data){
+                     $('#prop_selection').append($('<option>', {
+                         value: i,
+                         text: i
+                     }));
+
+                 }
+             }, error: function (jqXHR, text, err) {}
+         });
+
+ }
 
 function filterByID() {
     var id = $('#country_filter_id').val();

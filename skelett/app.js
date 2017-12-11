@@ -34,6 +34,11 @@ csv()
 ********************** handle HTTP METHODS ***********************
 **************************************************************************/
 
+app.get('/properties', function (req, res) {
+    res.send(world_data[0]);
+
+})
+
 app.get('/items',function (req, res){
     res.send(world_data);
     }
