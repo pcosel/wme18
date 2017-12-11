@@ -10,6 +10,7 @@ var world_data;
 
 //register body-parser to handle json from res / req
 app.use( bodyParser.json() );
+
 //register public dir to serve static files (html, css, js)
 app.use( express.static( path.join(__dirname, "public") ) );
 
@@ -21,11 +22,11 @@ app.use( express.static( path.join(__dirname, "public") ) );
 **************************************************************************/
 const csvFilePath='world_data.csv';
 
-Converter
+const csv =  require("csvtojson");
+csv()
     .fromFile(csvFilePath)
     .on("end_parsed", function(jsonArrayObj){
         world_data = jsonArrayObj;
-        console.log(world_data);
     });
 
 
@@ -33,6 +34,10 @@ Converter
 ********************** handle HTTP METHODS ***********************
 **************************************************************************/
 
+app.get('/items',function (req, res){
+    res.send(world_data);
+    }
+);
 
 
 // DO NOT CHANGE!
