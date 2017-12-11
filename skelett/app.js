@@ -44,6 +44,21 @@ app.get('/items/:id', function(req, res) {
     res.send(world_data[id - 1]);
 });
 
+app.get('/items/:id1/:id2', function(req, res) {
+    const id1 = req.params.id1;
+    const id2 = req.params.id2;
+
+    console.log(id1);
+    var result = [];
+    var j = 0;
+    for(var i = id1 - 1; i <= id2 - 1; i++) {
+        result[j] = world_data[i];
+        j++;
+    }
+
+    res.send(result);
+});
+
 // DO NOT CHANGE!
 // bind server to port
 var server = app.listen(3000, function () {

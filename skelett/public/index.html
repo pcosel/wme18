@@ -50,24 +50,22 @@
 			<div class="rest-country">
 				<div class="rest-api-block">
 					<h2>Filter Countries</h2>
-					<form name="country_filter" id="country_filter" method="GET" onsubmit="filterByID()">
 						<p>
 							<label for="country_filter_id">country id</label>
-							<input type="text" name="country_filter_id" id="country_filter_id">
+							<input type="number" name="country_filter_id" id="country_filter_id" min="0">
 						</p>
 						<p>
 							<label for="country_filter_range_min">country id range: <br> Min: </label>
-							<input type="text" name="country_filter_range_min" id="country_filter_range_min">
+							<input type="number" name="country_filter_range_min" id="country_filter_range_min" min="0">
 						</p>
 
 						<p>
 							<label for="country_filter_range_max">Max:</label>
-							<input type="text" name="country_filter_range_max" id="country_filter_range_max">
+							<input type="number" name="country_filter_range_max" id="country_filter_range_max" min="0">
 						</p>
 						<p class="submit">
-							<input type="submit" name="submit" id="filter_submit" value="Filter Countries">
+							<input type="submit" name="submit" id="filter_submit" value="Filter Countries" onclick="filterByID()">
 						</p>
-					</form>
 				</div>
 			</div>
 			<div class="rest-prop">
@@ -132,7 +130,7 @@
 				</tr>
 			</thead>
 			<tbody id="table_body">
-				<!-- list countrys with ajax -->
+				<!-- list countries with ajax -->
 			</tbody>
 		</table>
 
@@ -149,8 +147,8 @@
 		</div>
 		<div class="right">
 			<p>
-				This solution has been created by:<br>
-				FIXME
+				This solution has been created by: <br>
+				Phillip Cosel (4513292) and Yasmin Haustein (4562448)
 			</p>
 		</div>
 	</div>
