@@ -42,7 +42,7 @@ app.get('/items',function (req, res){
 app.get('/items/:id', function(req, res) {
     const id = req.params.id;
 
-    if(id < 0 || id > world_data.length) {
+    if(id <= 0 || id > world_data.length) {
         res.status(500).send("");
     } else {
         res.send(world_data[id - 1]);
@@ -53,7 +53,7 @@ app.get('/items/:id1/:id2', function(req, res) {
     const id1 = req.params.id1;
     const id2 = req.params.id2;
 
-    if(id1 < 0 || id1 > id2 || id2 > world_data.length) {
+    if(id1 <= 0 || id2 <= 0 || id1 > id2 || id2 > world_data.length) {
         res.status(500).send("");
     } else {
         var result = [];
