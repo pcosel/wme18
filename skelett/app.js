@@ -40,12 +40,12 @@ app.get('/properties', function (req, res) {
 })
 
 app.post('/items',function (req, res){
-    console.log("done");
-    const data = req.body.name;
-    console.log(req.params);
-    //const serializedData= JSON.parse(data);
-    //world_data.push(serializedData);
-        res.send(world_data);
+
+    //not working because body somehow always empty
+    var data = req.body;
+
+    world_data.push(data);
+    res.send(world_data);
     }
 );
 
@@ -84,11 +84,8 @@ app.get('/items/:id1/:id2', function(req, res) {
 });
 
 app.post('/items', function (req, res) {
-    var name = req.params.name;
-    var birthRate = req.params.birthRate;
-    var cellphone = req.params.cellphone;
 
-    console.log(name);
+    console.log(req.body.name);
 
     var newData = {"name": name,"birth rate per capita": birthRate, "cell phones per 100": cellphone};
     world_data.push(newData);

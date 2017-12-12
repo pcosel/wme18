@@ -36,16 +36,13 @@ function addCountry() {
         type: "POST",
         url: "http://localhost:3000/items",
         async: true,
-        id: 1,
         data:{
             name: name,
             "birth rate per 1000":birth,
             "cell phones per 100":cellphone,
-            "children per woman":null,
-            "electricity consumption per capita":null,
-            "internet user per 100":null},
       success: function (data) {
-            console.log("done");
+          console.log("done");
+      }
     });
 }
 
@@ -92,28 +89,8 @@ function filterByID() {
     }
 }
 
-function addCountry() {
-    var name = $('#country_name').val();
-    var birthRate = $('#country_birth').val();
-    var cellphone = $('#country_cellphone').val();
-
-    var parameters = [name, birthRate, cellphone];
-
-    $.ajax({
-        type: "POST",
-        url: "http://localhost:3000/items",
-        data: parameters,
-        async: true,
-        success: function(data) {
-            displayTable(data);
-        }, error: function(jqXHR, text, err) {
-        }
-    });
-}
-
 function displayTable (data) {
     var output = "";
-    console.log(JSON.stringify(data));
     jQuery.each(data, function (i, item) {
         output+=
             ' <tr>' +
