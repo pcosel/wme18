@@ -39,6 +39,17 @@ app.get('/properties', function (req, res) {
 
 })
 
+app.post('/items',function (req, res){
+    console.log("done");
+    const data = req.body.name;
+    console.log(req.params);
+    //const serializedData= JSON.parse(data);
+    //world_data.push(serializedData);
+        res.send(world_data);
+    }
+);
+
+
 app.get('/items',function (req, res){
     res.send(world_data);
     }

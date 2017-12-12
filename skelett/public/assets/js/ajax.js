@@ -27,6 +27,28 @@ $.ajax({
          });
 
  }
+function addCountry() {
+    event.preventDefault();
+    var name = $('#country_name').val();
+    var birth = $('#country_brith').val();
+    var cellphone = $('#country_cellphone').val();
+    $.ajax({
+        type: "POST",
+        url: "http://localhost:3000/items",
+        async: true,
+        id: 1,
+        data:{
+            name: name,
+            "birth rate per 1000":birth,
+            "cell phones per 100":cellphone,
+            "children per woman":null,
+            "electricity consumption per capita":null,
+            "internet user per 100":null},
+      success: function (data) {
+            console.log("done");
+    });
+}
+
 
 function filterByID() {
     var id = $('#country_filter_id').val();
