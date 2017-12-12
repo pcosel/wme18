@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="787a5972-ed5a-45fb-85d5-e0b314c27098" name="Default" comment="Merge branch 'master' of https://github.com/pcosel/wme18&#10;&#10;# Conflicts:&#10;#&#9;code/index.html">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skelett/app.js" afterPath="$PROJECT_DIR$/skelett/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skelett/public/assets/js/ajax.js" afterPath="$PROJECT_DIR$/skelett/public/assets/js/ajax.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,11 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ajax.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skelett/public/assets/js/ajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+            <state relative-caret-position="550">
+              <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.me" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/skelett/read.me">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="66" lean-forward="false" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -53,8 +61,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skelett/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="96" column="120" lean-forward="false" selection-start-line="96" selection-start-column="120" selection-end-line="96" selection-end-column="120" />
+            <state relative-caret-position="-15">
+              <caret line="132" column="16" lean-forward="true" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
               <folding>
                 <marker date="1513013175904" expanded="false" signature="3937:3949" ph="..." />
                 <marker date="1513013175904" expanded="false" signature="3951:3957" ph=" " />
@@ -91,6 +99,7 @@
         <option value="$PROJECT_DIR$/skelett/public/index.html" />
         <option value="$PROJECT_DIR$/skelett/public/assets/js/ajax.js" />
         <option value="$PROJECT_DIR$/skelett/app.js" />
+        <option value="$PROJECT_DIR$/skelett/read.me" />
       </list>
     </option>
   </component>
@@ -134,7 +143,7 @@
             <path>
               <item name="Aufgabe3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Aufgabe3" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="skelett" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,7 +298,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47622000" />
+    <option name="totallyTimeSpent" value="47830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -371,13 +380,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/PHP/print.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/PHP/save.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -702,18 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skelett/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="96" column="120" lean-forward="false" selection-start-line="96" selection-start-column="120" selection-end-line="96" selection-end-column="120" />
-          <folding>
-            <marker date="1513013175904" expanded="false" signature="3937:3949" ph="..." />
-            <marker date="1513013175904" expanded="false" signature="3951:3957" ph=" " />
-            <marker date="1513013175904" expanded="false" signature="4396:4402" ph="©" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skelett/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -726,8 +716,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/skelett/public/assets/js/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        <state relative-caret-position="550">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skelett/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="132" column="16" lean-forward="true" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
+          <folding>
+            <marker date="1513013175904" expanded="false" signature="3937:3949" ph="..." />
+            <marker date="1513013175904" expanded="false" signature="3951:3957" ph=" " />
+            <marker date="1513013175904" expanded="false" signature="4396:4402" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skelett/read.me">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="66" lean-forward="false" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
           <folding />
         </state>
       </provider>
