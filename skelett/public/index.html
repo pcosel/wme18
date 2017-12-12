@@ -81,7 +81,6 @@
 			<div class="rest-add">
 				<div class="rest-api-block">
 					<h2>Add Country</h2>
-					<form name="country_add" id="country_add" method="POST">
 						<p>
 							<label for="country_name">country name</label>
 							<input type="text" name="country_name" id="country_name">
@@ -95,9 +94,8 @@
 							<input type="number" name="country_cellphone" id="country_cellphone">
 						</p>
 						<p class="submit">
-							<input type="submit" name="submit" id="add_submit" value="Add Country">
+							<input type="submit" name="submit" id="add_submit" value="Add Country" onclick="addCountry()">
 						</p>
-					</form>
 				</div>
 			</div>
 			<div class="rest-delete">
