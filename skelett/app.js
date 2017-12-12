@@ -72,6 +72,19 @@ app.get('/items/:id1/:id2', function(req, res) {
     }
 });
 
+app.post('/items', function (req, res) {
+    var name = req.params.name;
+    var birthRate = req.params.birthRate;
+    var cellphone = req.params.cellphone;
+
+    console.log(name);
+
+    var newData = {"name": name,"birth rate per capita": birthRate, "cell phones per 100": cellphone};
+    world_data.push(newData);
+
+    res.send(world_data);
+});
+
 // DO NOT CHANGE!
 // bind server to port
 var server = app.listen(3000, function () {

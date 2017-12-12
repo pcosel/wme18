@@ -70,8 +70,28 @@ function filterByID() {
     }
 }
 
+function addCountry() {
+    var name = $('#country_name').val();
+    var birthRate = $('#country_birth').val();
+    var cellphone = $('#country_cellphone').val();
+
+    var parameters = [name, birthRate, cellphone];
+
+    $.ajax({
+        type: "POST",
+        url: "http://localhost:3000/items",
+        data: parameters,
+        async: true,
+        success: function(data) {
+            displayTable(data);
+        }, error: function(jqXHR, text, err) {
+        }
+    });
+}
+
 function displayTable (data) {
     var output = "";
+    console.log(JSON.stringify(data));
     jQuery.each(data, function (i, item) {
         output+=
             ' <tr>' +
